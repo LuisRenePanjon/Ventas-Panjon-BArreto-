@@ -1,0 +1,7 @@
+{
+  "name": "ventas-panjon-rene",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
