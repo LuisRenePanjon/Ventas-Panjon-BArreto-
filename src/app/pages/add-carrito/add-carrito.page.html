@@ -1,0 +1,18 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>addCarrito</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-content>
+    <ion-card *ngFor="let producto of productos | async" (click)="addCarrito(producto)">
+      <img  src={{producto.imagen}} />
+      <ion-label position="floating">Nombre</ion-label>
+      <h1>{{producto.nombre}}</h1>
+      <ion-label position="floating">Descripcion</ion-label>
+      <h1>{{producto.descripcion}}</h1>
+      <ion-label position="floating">Precio</ion-label>
+      <h1>{{producto.precio}}</h1>
+    </ion-card>
+</ion-content>
